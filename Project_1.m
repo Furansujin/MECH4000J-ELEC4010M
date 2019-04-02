@@ -18,8 +18,9 @@ toc;
 %                                               vector_spacing, plot_color)
 figure(1);
 tic;
-pl = inv_kin(1176, 0, 191.4, p,  10, 'r');
+pl = inv_kin(1176, 0, 191.4, p,  10, 'b');
 toc;
-%% Write MA INITIALS BITCH ASS BAXTER
+%% Write my Initial TS
 % wrt_init(point_spacing, pre-calculated point cloud (recommended) or [])
+figure(3);
 wrt_init(5, p);
