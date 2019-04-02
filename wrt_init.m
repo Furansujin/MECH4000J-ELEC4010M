@@ -6,11 +6,11 @@ function wrt_init(st, p)
     T = horzcat(x', -y', z');
     for i = 1:length(T(:,1))
         if i == 1
-            plt = inv_kin(T(i,1), T(i,2), T(i,3), p, 1, 'b');
+            plt_links = inv_kin(T(i,1), T(i,2), T(i,3), p, 1, 'b');
             pause(0.0001)
         else
-            delete(plt);
-            plt = inv_kin(T(i,1), T(i,2), T(i,3), p, 1, 'b');
+            delete(plt_links);
+            plt_links = inv_kin(T(i,1), T(i,2), T(i,3), p, 1, 'b');
             pause(0.0001);
         end
     end
