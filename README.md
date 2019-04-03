@@ -27,7 +27,7 @@ p_cloud(vector_spacing)
 
 Inverse Kinematics function
 ```
-inv_kin(x_pos, y_pos, z_pos, pre-calculated point cloud or [], vector_spacing, plot_color)
+inv_kin(x_pos, y_pos, z_pos, pre-calculated point cloud or [], number of solutions, plot_color)
 ```
 
 Write my Initial TS function
