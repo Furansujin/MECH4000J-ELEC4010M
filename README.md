@@ -6,6 +6,8 @@ Implement functions to determine the baxter robots 7-DOF arm configuration. The 
 3. Inverse Kinematics function
 4. Write my Initial TS function
 
+Refer to [Project#1.pdf](https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project%231.pdf) for more details.
+
 ## Getting Started
 Clone the following repository into your local system and open the project folder in matlab and you are good to go! It's that easy.
 
