@@ -5,7 +5,7 @@ clc, clear all
 % fwd_kin(angle_joint_1, angle_joint_2, angle_joint_3, angle_joint_4, ...
 %                  angle_joint_5, angle_joint_6, angle_joint_7, plot_color)
 figure(1);
-fwd_kin(0,0,0,0,0,0,0, 'r');
+fwd_kin(30,0,30,0,0,0,0, 'r');
 hold on;
 
 %% Point Cloud
@@ -18,7 +18,7 @@ toc;
 %                                               number of solutions, plot_color)
 figure(1);
 tic;
-pl = inv_kin(1176, 0, 191.4, p,  40, 'b');
+pl = inv_kin(1176, 0, 191.4, [],  2, 'b');
 toc;
 %% Write my Initial TS
 % wrt_init(point_spacing, pre-calculated point cloud (recommended) or [])
