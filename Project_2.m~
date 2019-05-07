@@ -1,0 +1,6 @@
+clear all, clc;
+v = [600, 0; 800, 200; 700, 300; 500, 300];
+ang = 20;
+polygon(v);
+hold on
+det_fr_cls(v, 1, 3, 6, 6, ang);
