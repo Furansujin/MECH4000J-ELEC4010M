@@ -5,6 +5,6 @@ function polygon(v)
     axis equal
     x_cen = mean([min(v(:,1)) max(v(:,1))]);
     y_cen = mean([min(v(:,2)) max(v(:,2))]);
-    axis([(min(v(:,1)) - x_cen) (max(v(:,1))+ x_cen) (min(v(:,2))- y_cen) (max(v(:,2)+ y_cen))])
+    axis([(min(v(:,1)) - x_cen)*3 (max(v(:,1))- x_cen)*3 (min(v(:,2))- y_cen)*3 (max(v(:,2)- y_cen)*4)])
 %     axis([-1000 1000 -1000 1000])
 end

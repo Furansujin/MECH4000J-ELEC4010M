@@ -24,4 +24,4 @@ toc;
 %% Write my Initial TS
 % wrt_init(point_spacing, pre-calculated point cloud (recommended) or [])
 figure(3);
-wrt_init(3, p);
+wrt_init(3, p, t);

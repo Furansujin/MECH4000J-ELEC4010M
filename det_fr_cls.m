@@ -1,4 +1,4 @@
-function [l,m,l1,m1] = det_fr_cls(v, ln1, ln2, ind1, ind2, u)
+function [l,m,l1,m1,fc] = det_fr_cls(v, ln1, ln2, ind1, ind2, u)
     x1 = [v(ln1,1), v(ln1+1,1)];
     y1 = [v(ln1,2), v(ln1+1,2)];
     [n, l, m] = plt_cone(u, x1, y1, ind1, v, 'r');
@@ -23,8 +23,10 @@ function [l,m,l1,m1] = det_fr_cls(v, ln1, ln2, ind1, ind2, u)
 
     if abs(rad2deg(t)) < u && abs(rad2deg(t1)) < u
         fprintf("force closure")
+        fc = 1;
 %         inv_kin(l, m, 0, [],  1, 'b');
     else
         fprintf("not force closure")
+        fc = 0;
     end
 end
