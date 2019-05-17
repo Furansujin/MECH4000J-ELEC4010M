@@ -14,24 +14,17 @@ Clone the following repository into your local system and open the project folde
 Run Project_2.m and input the parameters. See below an example of the sample output and usage:
 
 ### Functions Implemented
-Forward Kinematics function
+Plotting Polygon function
 ```
-fwd_kin(angle_joint_1, angle_joint_2, angle_joint_3, angle_joint_4, angle_joint_5, angle_joint_6, angle_joint_7, plot_color)
+polygon(vertices)
 ```
-
-Generating Point Cloud function
+Determining Force Closure function
 ```
-p_cloud(vector_spacing)
+[x_coordinate_line_1, y_coordinate_line_1, x_coordinate_line_2, y_coordinate_line_2, Force_Closure_Flag] = det_fr_cls(vertices, line_1, line_2, point_on_line_1, point_on_line_1, cone_angle);
 ```
-
-Inverse Kinematics function
+Plotting Baxter arm function
 ```
-inv_kin(x_pos, y_pos, z_pos, pre-calculated point cloud or [], number of solutions, plot_color)
-```
-
-Write my Initial TS function
-```
-wrt_init(point_spacing, pre-calculated point cloud (recommended) or [])
+plt_rbt(vertices, x_coordinate_line_1, y_coordinate_line_1, x_coordinate_line_2, y_coordinate_line_2, Force_Closure_Flag);
 ```
 
 ## Authors
