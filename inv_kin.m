@@ -1,5 +1,5 @@
 function plt = inv_kin(x, y, z, point_cloud, num_sol, t, h)
-    options = optimoptions(@lsqnonlin,'Algorithm','levenberg-marquardt');
+    options = optimoptions(@lsqnonlin,'Algorithm','levenberg-marquardt','Display','off');
     w = 10;
     a = linspace(-141,51,w)*pi/180;
     b = linspace(-123,60,w)*pi/180;

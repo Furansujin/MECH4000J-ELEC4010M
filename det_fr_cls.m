@@ -22,11 +22,11 @@ function [l,m,l1,m1,fc] = det_fr_cls(v, ln1, ln2, ind1, ind2, u)
     t1 = atan((coef(1)-(o1))/(1+(o1*coef(1))));
 
     if abs(rad2deg(t)) < u && abs(rad2deg(t1)) < u
-        fprintf("force closure")
+        fprintf("Force Closure, Please Wait...")
         fc = 1;
 %         inv_kin(l, m, 0, [],  1, 'b');
     else
-        fprintf("not force closure")
+        fprintf("Not Force Closure, Try some other points")
         fc = 0;
     end
 end

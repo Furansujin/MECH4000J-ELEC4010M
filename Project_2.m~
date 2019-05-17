@@ -4,8 +4,8 @@ clear all, clc;
 %% User Input
 v = input('Input vertices eg. [0, 0; 600, 100; 900, 300; 300, 200]: ');
 u = input('Friction Coefficient from 0 < u < 10^17: ');
-a = input('Input line 1 (from 1 to number of vertices) and a point on the line (from 2 to 8) eg. [1,8]: ');
-b = input('Input line 2(from 1 to number of vertices) and a point on the line (from 2 to 8) eg. [3,8]: ');
+[l1, ind1] = input('Input line (from 1 to number of vertices) and a point on the line (from 2 to ): ');
+[l2, ind2] = input('Input vertices eg. [0, 0; 600, 100; 900, 300; 300, 200]: ');
 
 
 %% Define virtices for the polygon
@@ -20,5 +20,5 @@ polygon(v);
 hold on
 
 %% Determine if the 2 contact points are in force closure and plot the robot configuration
-[x0, y0, x1, y1, fc] = det_fr_cls(v, a(1), b(1), a(2), b(2), ang);
+[x0, y0, x1, y1, fc] = det_fr_cls(v, 1, 3, 8, 8, ang);
 plt_rbt(v, x0, y0, x1, y1, fc);
