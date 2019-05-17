@@ -5,13 +5,29 @@ Implement functions to determine the quality grasps on planar parts. The list of
 2. Determining Force Closure function
 3. Plotting Baxter arm function
 
-Refer to [Project#2.pdf](https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project%231.pdf) for more details.
+Refer to [Project#2.pdf](https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/Project%232.pdf) for more details.
 
 ## Getting Started
 Clone the following repository into your local system and open the project folder in matlab and you are good to go! It's that easy.
 
 ## Running the tests
 Run Project_2.m and input the parameters. See below an example of the sample output and usage:
+
+Case 1: Force Closure == True
+
+<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/input_fc.png" width="548" height="79"/>
+
+Result:
+
+<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/final.png" width="640" height="242"/>
+
+Case 2: Force Closure == False
+
+<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/input_nfc.png" width="548" height="79"/>
+
+Result:
+
+<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/nfc.png" width="640" height="242"/>
 
 ### Functions Implemented
 Plotting Polygon function
