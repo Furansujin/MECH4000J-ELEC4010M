@@ -19,7 +19,7 @@ toc;
 %                                               number of solutions, plot_color)
 figure(1);
 tic;
-pl = inv_kin(1176, 0, 191.4, [],  2, t, 'b');
+pl = inv_kin(1176, 0, 191.4, [],  10, t, 'b');
 toc;
 %% Write my Initial TS
 % wrt_init(point_spacing, pre-calculated point cloud (recommended) or [])

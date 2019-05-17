@@ -1,5 +1,7 @@
-function plt_links = fwd_kin(l, m, n, o, p, q, r, t, s)
+function [plt_links, check] = fwd_kin(l, m, n, o, p, q, r, t, s)
 
+check = 0;
+plt_links = 0;
 v0 = [0,0,0,1]';
 
 l = (l*pi)/180;
@@ -39,7 +41,10 @@ v7 = tr*t01*t12*t23*t34*t45*t56*t67*v0;
 v=[v7';v6';v5';v4';v3';v2';v1';v'];
 plot3(v(1,1),v(1,2),v(1,3),'k.');
 hold on;
-plt_links = plot3(v(:,1),v(:,2),v(:,3),s,'LineWidth',3);
-% plt_joints = plot3(v(:,1),v(:,2),v(:,3),'O','markerfacecolor', 'b', 'MarkerSize', 8);
+if(v(:,3) >= 0)
+    plt_links = plot3(v(:,1),v(:,2),v(:,3),s,'LineWidth',3);
+    check = 1;
+    % plt_joints = plot3(v(:,1),v(:,2),v(:,3),'O','markerfacecolor', 'b', 'MarkerSize', 8);
+end
 axis equal
 end

@@ -44,9 +44,11 @@ function plt = inv_kin(x, y, z, point_cloud, num_sol, t, h)
                 && (ang(4) > -3*(pi/180) && ang(4) < 150*(pi/180))...
                 && (ang(5) > -175*(pi/180) && ang(5) < 175*(pi/180))...
                 && (ang(6) > -90*(pi/180) && ang(6) < 120*(pi/180))
-            plt = fwd_kin(ang(1)*(180/pi),ang(2)*(180/pi),ang(3)*(180/pi),ang(4)*(180/pi),ang(5)*(180/pi),ang(6)*(180/pi),0, t, h);
+            [plt, chk] = fwd_kin(ang(1)*(180/pi),ang(2)*(180/pi),ang(3)*(180/pi),ang(4)*(180/pi),ang(5)*(180/pi),ang(6)*(180/pi),0, t, h);
             hold on;
-            cnt  = cnt + 1;
+            if(chk == 1)
+                cnt  = cnt + 1;
+            end
         end
         i = i+1;
     end

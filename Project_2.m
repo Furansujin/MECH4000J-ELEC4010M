@@ -13,5 +13,5 @@ polygon(v);
 hold on
 
 %% Determine if the 2 contact points are in force closure and plot the robot configuration
-[x0, y0, x1, y1, fc] = det_fr_cls(v, 1, 4, 4, 8, ang);
+[x0, y0, x1, y1, fc] = det_fr_cls(v, 1, 3, 4, 8, ang);
 plt_rbt(v, x0, y0, x1, y1, fc);
