@@ -1,18 +1,17 @@
-# MECH4000J/ELEC4010M Project 1
-Implement functions to determine the baxter robots 7-DOF arm configuration. The list of functions implemented are shown below:
+# MECH4000J/ELEC4010M Project 2
+Implement functions to determine the quality grasps on planar parts. The list of functions implemented are shown below:
 
-1. Forward Kinematics function
-2. Generating Point Cloud function
-3. Inverse Kinematics function
-4. Write my Initial TS function
+1. Plotting Polygon function
+2. Determining Force Closure function
+3. Plotting Baxter arm function
 
-Refer to [Project#1.pdf](https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_1/Project%231.pdf) for more details.
+Refer to [Project#2.pdf](https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project%231.pdf) for more details.
 
 ## Getting Started
 Clone the following repository into your local system and open the project folder in matlab and you are good to go! It's that easy.
 
 ## Running the tests
-Refer to Project_1.m for sample usage code. Run by section from the top as the sample test requires certain functions to run before others.
+Run Project_2.m and input the parameters. See below an example of the sample output and usage:
 
 ### Functions Implemented
 Forward Kinematics function
