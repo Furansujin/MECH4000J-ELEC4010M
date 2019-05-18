@@ -15,7 +15,7 @@ Run Project_2.m and input the parameters. See below an example of the sample out
 
 Case 1: Force Closure == True
 
-<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/input_fc.png" width="548" height="79"/>
+<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/input_fc.png" width="648" height="79"/>
 
 Result:
 
@@ -23,7 +23,7 @@ Result:
 
 Case 2: Force Closure == False
 
-<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/input_nfc.png" width="548" height="79"/>
+<img src="https://github.com/trns1997/MECH4000J-ELEC4010M/blob/master/Project_2/images/input_nfc.png" width="648" height="79"/>
 
 Result:
 
