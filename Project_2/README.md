@@ -36,7 +36,7 @@ polygon(vertices)
 ```
 Determining Force Closure function
 ```
-[x_coordinate_line_1, y_coordinate_line_1, x_coordinate_line_2, y_coordinate_line_2, Force_Closure_Flag] = det_fr_cls(vertices, line_1, line_2, point_on_line_1, point_on_line_1, cone_angle);
+[x_coordinate_line_1, y_coordinate_line_1, x_coordinate_line_2, y_coordinate_line_2, Force_Closure_Flag] = det_fr_cls(vertices, line_choice_1, line_choice_2, point_on_line_1, point_on_line_1, cone_angle);
 ```
 Plotting Baxter arm function
 ```
