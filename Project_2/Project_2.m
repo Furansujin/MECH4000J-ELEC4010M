@@ -4,8 +4,8 @@ clear all, clc;
 %% User Input
 v = input('Input vertices eg. [0, 0; 600, 100; 900, 300; 300, 200]: ');
 u = input('Friction Coefficient from 0 < u < 10^17: ');
-a = input('Input line 1 (from 1 to number of vertices) and a point on the line (from 2 to 8) eg. [1,8]: ');
-b = input('Input line 2(from 1 to number of vertices) and a point on the line (from 2 to 8) eg. [3,8]: ');
+a = input('Input line segment of choice 1 (from 1 to number of vertices) and a point on that line segment(from 2 to 8) eg. [1,8]: ');
+b = input('Input line segment of choice 2(from 1 to number of vertices) and a point on that line segment(from 2 to 8) eg. [3,8]: ');
 
 %% Define vertices for the polygon
 % v = [0, 0; 600, 100; 900, 300; 300, 200;];
